@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero_bg {
+  background-image: url(/assets/images/hero.jpg);
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-size: auto;
+  overflow: hidden;
+}
+
+.hero_overlay {
+  background-color: transparent;
+  background-image: linear-gradient(110deg, #ffffff 53%, #00000000 53%);
+  opacity: 1;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+
+.vertical-timeline.vertical-timeline-custom-line::before {
+  background: #9ec51e;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-pagination-bullet {
+  background: #232323;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background: #9ec51e;
+}
+
+.swiper-pagination {
+  bottom: -0.4rem !important;
+}
+
+.swiper-wrapper {
+  padding-bottom: 2rem;
+}
+
+.hero_mobile_bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),
+    url(/assets/images/hero.jpg) no-repeat;
+  background-size: cover;
+  background-position: -190px 0px;
+}
+
+.z_10000 {
+  z-index: 10000;
+}
+
+.z_10001 {
+  z-index: 10001;
+}
